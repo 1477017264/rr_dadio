@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+	<link rel="icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>❤️站❤️长❤️推❤️荐❤️</title>
+    <style type="text/css">
+        p {
+            margin: 0;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .overlay,
+        .scare {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        p.overlay-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: black;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .overlay-button {
+            display: inline-flex;
+            align-items: center;
+            height: 40px;
+            padding-right: 24px;
+            padding-left: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 4px;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .overlay-buttons-wrapper {
+            margin: 24px -8px -8px;
+        }
+
+        #left-button {
+            background-color: rgb(255, 0, 0);
+            color: white;
+			text-decoration: none;
+        }
+
+        #center-button,#right-button {
+			height: 40px;
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+			text-decoration: none;
+        }
+
+        p.overlay-description {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+
+        .overlay-body {
+            max-width: 512px;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+        }
+
+        .overlay[hidden] {
+            display: none;
+        }
+
+        .overlay {
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://iw233.cn/api.php?sort=mp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 0;
+        }
+
+        .text-bg {
+            background: rgba(255,255,255,0.4)!important;
+            backdrop-filter: blur(13px);
+			border-radius: 8px;
+            padding: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="overlay" class="overlay">
+        <div class="text-bg">
+            <div class="overlay-body">
+                <p class="overlay-title">你好 ヾ(•ω•`)o</p>
+                <p class="overlay-description">此页面只作为学习交流使用，无其他用途，更多信息请访问仓库</p>
+                <div class="overlay-buttons-wrapper">
+                    <a id="left-button" class="overlay-button" href="https://1477017264.github.io/">站长首页</a> 
+					<a id="right-button" class="overlay-button" href="">仓库地址</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
